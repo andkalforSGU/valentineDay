@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Geo&subset=latin);
+
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.container-tilt {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.container-size {
+    position: relative;
+    width: 35%;
+    margin: auto;
+}
+
+.heart {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+
+.text {
+    font-family: 'Geo', serif;
+    font-size: 3.5vw;
+    /* make text super sharp */
+    -webkit-font-smoothing: none;
+
+    position: absolute;
+    top: 35%;
+    right: 33%;
+
+    transform: translateZ(40px);
+    transform-style: preserve-3d;
+
+    transition: 0.4s;
+}
+
+.text:hover {
+    color: white;
+    font-size: 4.2vw;
+    right: 30%;
+    top: 34%;
+    transition: 0.4s;
+}
+
+.flipper {
+    transform: rotateY(180deg);
+    transition: 0.8s;
+    transform-style: preserve-3d;
+}
+
+.none {
+    display: none;
+}
+
+.reverse {
+    transform: rotateY(180deg) translateZ(40px);
+}
+
+.perple {
+    background-color: black;
+}
+
+.sakura {
+    background-image: url("img/bg.gif");
+    background-size: 100% 100%;
+}
